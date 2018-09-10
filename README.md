@@ -10,23 +10,21 @@
 编辑器插件 : Solidity v0.0.46
 ```
 
-##### 安装Node
+##### 安装Chrome
 
 ```
-Node 官网
+Chrome 官网
 ```
 
-##### 安装Truffle
+##### 安装MetaMask
 
-Truffle是目前最流行的开发框架，使命是让开发更容易。
-CONSENSYS 旗下, CONSENSYS是目前围绕以太坊生态最出名的组织, 你可以在很多以太坊的生态中看到他们的身影。比如 MetaMask, InFura.
-
-```
-安装命令 : npm install -g truffle
-```
+MetaMask : Brings Ethereum to your browser
+CONSENSYS 旗下, CONSENSYS是目前围绕以太坊生态最出名的组织, 你可以在很多以太坊的生态中看到他们的身影。比如 truffle, InFura.
 
 ### 设定目标
 
+1. Airdrop Contract
+2. Exchange Contract
 
 
 
