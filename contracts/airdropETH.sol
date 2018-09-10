@@ -58,12 +58,17 @@ contract ERC20 is ERC20Basic {
 contract Airdropper is Ownable {
 
     function multisend(address[] dests, uint256[] values)
-    onlyOwner
-    returns (uint256) {
+    onlyOwner payable
+    returns (bool) {
+        require(dests.length == values.length);
+        uint256 i = 0;
+        uint256 totalVaule = 0;
         while (i < dests.length) {
            dests[i].transfer(values[i]);
+           totalVaule += values[i];
            i += 1;
         }
-        return(i);
+        require(totalVaule <= msg.value);
+        return(true);
     }
 }
