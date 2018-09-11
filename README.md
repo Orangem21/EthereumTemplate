@@ -23,14 +23,31 @@ CONSENSYS 旗下, CONSENSYS是目前围绕以太坊生态最出名的组织, 你
 
 ### 设定目标
 
-1. Airdrop Contract
+1. Token 合约解析
+  ```
+  ERC20
+  ERC721
+ ```
+ 2. 漏洞分析
 
+```
+ENU漏洞解析
 
-2. Exchange Contract
+BEC漏洞解析
+
+SafeMath.sol 的重要性
+```
+
+3. Airdrop Contract
+
+> 空投Token
+
+> 空投ETH
+
+> 空投改进版本
 
 
 3. 漏洞分析
-
 
 
 
