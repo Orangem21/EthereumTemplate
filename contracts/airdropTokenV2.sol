@@ -61,10 +61,15 @@ contract Airdropper is Ownable {
     onlyOwner
     returns (bool) {
         require(dests.length == values.length);
-        uint256 i = 0;
-        while (i < dests.length) {
-           ERC20(_tokenAddr).transfer(dests[i], values[i]);
-           i += 1;
+        uint totalVaule = 0;
+        for (uint i = 0; i < dests.length; i++) {
+          totalValues +=  values[i];
+        }
+
+        require(ERC20(_tokenAddr).transferFrom(msg.sender,address(this),totalValues));
+
+        for (i = 0; i < dests.length; i++) {
+          ERC20(_tokenAddr).transfer(msg.sender, values[i]);
         }
         return(true);
   }
